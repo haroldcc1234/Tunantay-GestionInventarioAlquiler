@@ -1,0 +1,22 @@
+{
+  "name": "tunantay-services",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js",
+    "local": "node local.js",
+    "setup": "node setup.js",
+    "test:integration": "node --test --test-name-pattern=\"Integración\" test/integration.test.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mysql2": "^3.14.1",
+    "jsonwebtoken": "^9.0.2",
+    "helmet": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
